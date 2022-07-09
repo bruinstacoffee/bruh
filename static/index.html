@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://purusidcontent.github.io/floater/floater.css">
-    <link rel="shortcut icon" href="https://purusidcontent.github.io/ico/purusid-cropped.png">
+    <title>PuruSidDev</title>
+    <link rel="stylesheet" href="https://purusidcontent.github.io/floater/floater.css" id="stylesheet">
     <script src="https://purusidcontent.github.io/floater/floater.js"></script>
-    <title>BruInstaCoffee</title>
-    <style>
-        a {
-            color: white;
-        }
-
-        * {
-            font-family: 'fixedsys' !important;
-            margin: 0;
-            padding: 0;
-        }
-
-        @font-face {
-            font-family: 'fixedsys';
-            src: url('https://raw.githubusercontent.com/javanile/fixedsys-css/main/fonts/fsex300-webfont.eot?raw=true');
-            src: url('https://raw.githubusercontent.com/javanile/fixedsys-css/main/fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
-                url('https://raw.githubusercontent.com/javanile/fixedsys-css/main/fonts/fsex300-webfont.woff') format('woff'),
-                url('https://raw.githubusercontent.com/javanile/fixedsys-css/main/fonts/fsex300-webfont.ttf') format('truetype'),
-                url('https://raw.githubusercontent.com/javanile/fixedsys-css/main/fonts/fsex300-webfont.svg#fixedsys') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            background-image: radial-gradient(#000, #1118, #000);
-            background-size: 3vmin 3vmin;
-        }
-    </style>
 </head>
 
-<body>
-    <h1 style="margin: auto;background: #000e;color: white;text-align: center;">BruhInstantCoffee</h1>
-    <h2 style="margin: auto;background: #0008;color: white;text-align: center;padding: 2vmin;">Featured</h2>
+<body onload="init()">
+    <div class="gradient-mask"></div>
+    <div id="loader">
+        <div class="loader-flex-container">
+            <div class="loader">
+                <div></div>
+                <div>
+                    <img src="https://purusidcontent.github.io/ico/arrow.png" class="up-arrow loader-arrow" style="transform: scale(var(--init-scale));">
+                </div>
+                <div></div>
+
+                <div style="transform: rotateZ(-90deg);">
+                    <img src="https://purusidcontent.github.io/ico/arrow.png" class="lt-arrow loader-arrow" style="transform: scale(var(--init-scale));">
+                </div>
+                <div></div>
+                <div style="transform: rotateZ(90deg);">
+                    <img src="https://purusidcontent.github.io/ico/arrow.png" class="rt-arrow loader-arrow" style="transform: scale(var(--init-scale));">
+                </div>
+
+                <div></div>
+                <div style="transform: rotateZ(180deg);">
+                    <img src="https://purusidcontent.github.io/ico/arrow.png" class="dw-arrow loader-arrow" style="transform: scale(var(--init-scale));">
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="loader-flex-container" style="background-color: #0000;">
+            <img src="https://purusidcontent.github.io/ico/loader-logo.png" style="height: 20vmin;width:20vmin">
+        </div>
+    </div>
+    <div class="flex-scroll-container" style="height: 100vh;width: 100%;display: flex;align-items: center;justify-content: center;">
+        <div style="display:block;">
+            <div class="heading">Bruh</div><br>
+            <div class="subheading" style="text-align: center;">Welcome</div>
+        </div>
+    </div>
+    <div class="top-bar">
+        <img src="https://purusidcontent.github.io/ico/purusid-cropped.png" class="corner-logo">
+        <h1 style="height: 10vmin;width: auto;background-color: #0000;padding: 0;line-height: 10vmin;color: #000;font-size: 3vmin;margin-left: 2vmin;">
+            Featured
+        </h1>
+    </div>
+    <br>
     <div class="flex-scroll-container">
         <div class="container">
             <div class="alternating-grid-list">
@@ -82,17 +95,57 @@
             </div>
         </div>
     </div>
-    <h2 style="margin: auto;background: #0008;color: white;text-align: center;">
-        MADE BY PURUSID
-        <br>
-        <a href="https://purusid.herokuapp.com/">https://purusid.herokuapp.com/</a>
-        <br>
-        MAIL: <a href="mailto:purusid@outlook.com">purusid@outlook.com</a>
-        /
-        <a href="mailto:purusiddev@gmail.com">purusiddev@gmail.com</a>
-        <br>
-        DISCORD: PuruSidDev#7810
-    </h2>
+    <br>
+    <div class="top-bar">
+        <img src="https://purusidcontent.github.io/ico/purusid-cropped.png" class="corner-logo">
+        <h1 style="height: 10vmin;width: auto;background-color: #0000;padding: 0;line-height: 10vmin;color: #000;font-size: 3vmin;margin-left: 2vmin;">
+            Coffee
+        </h1>
+    </div>
+    <br>
+    
+    <div class="flex-scroll-container">
+        <div class="container">
+            <div class="alternating-grid-list">
+                <a href="https://pluginspace.herokuapp.com/">
+                    <div class="list-icon">
+                        <img src="https://purusidcontent.github.io/ico/purusid.png">
+                    </div>
+                    <div class="list-desc">
+                        PluginSpace<br><br>
+                        The PuruSidDev App Store.
+                    </div>
+                </a>
+                <a href="https://chattick.herokuapp.com/">
+                    <div class="list-desc">
+                        ChatTick<br><br>
+                        The PuruSidDev Collaboration App.
+                    </div>
+                    <div class="list-icon">
+                        <img src="https://purusidcontent.github.io/ico/purusid.png">
+                    </div>
+                </a>
+                <a href="https://purusiddocs.herokuapp.com/">
+                    <div class="list-icon">
+                        <img src="https://purusidcontent.github.io/ico/purusid.png">
+                    </div>
+                    <div class="list-desc">
+                        PuruSidDocs<br><br>
+                        Our Product Documentation &amp;&amp; Guides.
+                    </div>
+                </a>
+                <a href="https://bruinstacoffee.herokuapp.com/">
+                    <div class="list-desc">
+                        BruhInstantCoffee<br><br>
+                        Our Partners, Affiliates, And The Credits Section.
+                    </div>
+                    <div class="list-icon">
+                        <img src="https://purusidcontent.github.io/ico/purusid.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
